@@ -41,6 +41,7 @@ main {
   display: grid;
   grid-template-columns: 350px 1fr;
   gap: 2rem;
+  
 }
 
 .queue-form {
@@ -113,6 +114,11 @@ button:hover {
   border-radius: 8px;
 }
 
+.queue-display h2 {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+}
+
 .queue-list {
   display: grid;
   gap: 1rem;
@@ -126,12 +132,22 @@ button:hover {
   justify-content: space-between;
   align-items: center;
 }
+.customer-details {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+}
 
-.customer-info h3 {
+.customer-details h3 {
   margin: 0;
   color: var(--text);
 }
 
+.customer-details p {
+  font-size: 14px;
+  margin: 0;
+  color: var(--text-secondary);
+}
 .customer-info p {
   margin: 0.5rem 0;
   color: var(--text-secondary);

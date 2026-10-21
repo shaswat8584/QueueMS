@@ -23,7 +23,10 @@ function QueueDisplay({ queue, onUpdateStatus, onRemove }) {
           {queue.map((customer) => (
             <div className="queue-item" key={customer.id}>
               <div className="customer-info">
-                <h3>{customer?.name}</h3>
+                <div className="customer-details">
+                  <h3>{customer?.name}</h3>
+                  <p>({customer.id})</p>
+                </div>
                 <p>{customer.service}</p>
                 <span
                   className="status"
